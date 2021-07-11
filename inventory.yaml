@@ -1,0 +1,35 @@
+# This file represents the identity card for each RPM project in SCR : Gitlab / SVN
+# See: https://mimecast.jira.com/wiki/spaces/APPSECENG/pages/1419051526/Application+Identity+Card
+
+#Name of the project.
+project_name: "feed"
+#Full path to the code repository such as Gitlab etc.
+full_path: "https://gitlab.devuk.mimecast.lan/segasec/feed"
+#[Gitlab, SVN, TFS, local]
+code_repository_type: "github"
+#Name of the component.
+component_name: "feed"
+#To classify the application and to specify and to specify its type [Internal, external, SaaS(cloud), open source].
+component_usage: "Internal"
+#The type of application that is built using this repo [Backend App, Web-Site Front End App, Mobile App, Frontend API, Library] -  e.g. Adcon would be Web-Site Front End with Component usage as SaaS, whereas MSC would be Web-Site Front End + Internal - if in doubt please ask AppSec.
+app_type: "library"
+#The risk category of this app, it is used to determine the risk causes that fall into common groups  [High, Medium, Low].
+risk_category: "high"
+#The Swimlane that handles this project.
+swimlane: "brand exploit protect"
+#The name of the team that owns the project.
+owning_team: "brand exploit protect"
+#Security Champion's name
+security_champion: "none"
+#A list of the executable programming languages that are used for this project (Java, C++, Ruby, Python, etc..)
+dev_language: "json"
+#Grid where the app is used in [Production, Staging, QA, LT] - Please enter the furthest stage of the pipeline e.g. if Deployed to Production, the entry would be Production even if App is used in other grids, QA projects would list as QA if not used in LT or Staging.
+application_purpose: "production"
+#[Internally Developed, Partially Outsource, Fully Outsourced, Commercial Off the Shelf, Legacy] - Legacy means no longer actively developed, EOL plan in place etc.
+development_strategy: "internally developed"
+#The type of DevOps CI/CD that used to build the App [Jenkins, TeamCity, TFS]
+ci_cd: "unsure"
+#Jira project key e.g. SSW, AS, WF etc.
+jira_project: "BE"
+#Whether the repo/project is currently in use.
+usage: "used"
